@@ -1,7 +1,4 @@
-see Wiki   
-    
-      
-Original Implementation by Chad Dombrova, 19/10/2013   
+see Wiki (Original Implementation by Chad Dombrova, 19/10/2013)   
 
 
 Development History:
@@ -16,7 +13,7 @@ Development History:
 
 =-- Gaetan Guidet, 16/03/2014
 
-https://github.com/gatgui/arnold-rv
+https://github.com/gatgui/arnold-rv    
 I have forked the original arnold-rv repository (thanks Chad!) and re-worked it a bit. 
 
 Here are the modifications:
