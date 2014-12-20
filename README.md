@@ -1,4 +1,4 @@
-see Wiki (Original Implementation by Chad Dombrova, 19/10/2013)   
+see Wiki (Original Implementation by [Chad Dombrova](https://github.com/LumaPictures/arnold-rv), 19/10/2013)   
 
 
 Development History:
