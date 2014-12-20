@@ -1,18 +1,21 @@
-see Wiki
+see Wiki   
+Original Implementation by Chad Dombrova, 19/10/2013   
 
 
-Development History below
+Development History:
 
-=-- Nik Yotis,     13/05/2014 --=
+=-- Nik Yotis,     13/05/2014
 
 - Removed Color Correction for clarity. Color Correction can easily be done in a package like Nuke.
-- TODO
+- TODO   
+- TODO   
+- TODO   
 
 
-=-- Gaetan Guidet, 16/03/2014 --= 
+=-- Gaetan Guidet, 16/03/2014
 
+https://github.com/gatgui/arnold-rv
 I have forked the original arnold-rv repository (thanks Chad!) and re-worked it a bit. 
-It is accessible at https://github.com/gatgui/arnold-rv
 
 Here are the modifications:
 - removed dependency to boost libraries, introoduced others to gnet, gcore, excons
@@ -30,13 +33,9 @@ Note: To switch between OCIO and any other color correction mode, RV has to be r
 (the driver will start rv with the approriate command line when necessary)
 - respond to RV ping signal
 - addition of an RV module to start maya render/ipr (including region) from RV
-Note: Works using the maya command port, so you need have one open. I also added a simple script to opens one if necessary. 
-Also. whatever you do, maya render view will popup but I couldn't find a way to avoid that 
-(it actually goes as far as to make maya crash in some cases).
-
-Cheers,
-Gaetan
+Note: Works using the maya command port, so you need have one open. I also added a simple script to open one if necessary. 
+Also Maya RenderView will popup but I couldn't find a way to avoid that (it actually goes as far as to make maya crash in some cases).
 
 
-=--- Chad Dombrova (original implementation)
+=-- Chad Dombrova, 19/10/2013   
 https://github.com/LumaPictures/arnold-rv
