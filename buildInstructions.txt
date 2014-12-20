@@ -3,7 +3,7 @@
 git clone $PATH/framebuffer_test https://github.com/nyotis/lightsPreview
 
 
-2. Make sure Gaetan's dependencies are correctly built
+2. Make sure Gaetan's dependencies [1] are correctly built
 
 git submodule init
 git submodule update
