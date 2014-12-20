@@ -3,13 +3,13 @@ see Wiki
 
 Development History below
 
-=---- Nik Yotis, 13/05/2014
+=-- Nik Yotis,     13/05/2014 --=
 
 - Removed Color Correction for clarity. Color Correction can easily be done in a package like Nuke.
 - TODO
 
 
-=---- Gaetan Guidet's arnold-rv version, 16/03/2014
+=-- Gaetan Guidet, 16/03/2014 --= 
 
 I have forked the original arnold-rv repository (thanks Chad!) and re-worked it a bit. 
 It is accessible at https://github.com/gatgui/arnold-rv
@@ -38,5 +38,5 @@ Cheers,
 Gaetan
 
 
-=--- Chad Dombrova
+=--- Chad Dombrova (original implementation)
 https://github.com/LumaPictures/arnold-rv
