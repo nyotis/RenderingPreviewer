@@ -1,9 +1,9 @@
 1. Clone repository
 
-git clone $PATH/framebuffer_test https://github.com/nyotis/lightsPreview
+git clone $PATH/framebufferTest https://github.com/nyotis/lightsPreview
 
 
-2. Make sure Gaetan's dependencies [1] are correctly built
+2. Build dependencies [1].
 
 git submodule init
 git submodule update
@@ -17,36 +17,46 @@ scons debug=1 with-arnold=$ARNOLD_PATH -j2
 4. Set RV version TO 4.0.10 and install the MayaRender Mode RV package
 
 setrv 4.0.10
-export RV_SUPPORT_PATH=PATH/framebuffer_test/rv
+export RV_SUPPORT_PATH=PATH/framebufferTest/rv
 
-cd PATH/framebuffer_test/rv/mayarender_mode
+cd PATH/framebufferTest/rvSpecific/mayarenderMode.mu
 ./createpackage
 cd ../
 rvpkg -install ./Packages/mayarender-1.0.rvpkg
 
-Fire-up RV and make sure you get a "Load Maya Render Mode loaded" in RV's console without any errors. If Maya Render Mode Menu doesn't show up in RV, go to Packages Tab under RV Preferences Window and make sure Maya Render Support is Installed and Loaded. 
+Fire-up RV and make sure you get a "Load Maya Render Mode loaded" in RVs console without any errors
+If Maya Render Mode Menu does not show up in RV, go to Packages Tab under RV Preferences Window and
+make sure Maya Render Support is Installed and Loaded. 
 
 
 5. Set Arnold path so that the dynamic library gets picked at runtime
+
 echo $ARNOLD_VERSION
-export ARNOLD_PLUGIN_PATH=PATH/framebuffer_test/debug/x64
+export ARNOLD_PLUGIN_PATH=PATH/framebufferTest/debug/x64
 
 
 6. Test the framebuffer
 
-Fire up maya and load one *.ma/*.mb scene to test the buffer.
+Fire up maya and load one *.ma | *.mb scene to test the buffer.
 
-Execute the Python script [missing] in Maya's console. RVlive button should appear on the right of Arnold-to-Mplay in Maya. Hit RVlive and a render of the scene in RV should appear.
+Execute the Python script [missing] in Mayas console. RVlive button should appear on the right of 
+Arnold-to-Mplay in Maya. Hit RVlive and a render of the scene in RV should appear.
 
-Set as Maya Port the one you picked earlier with the python script, say 4700. So set Port to 4700​ under Maya Render Menu -> Configure in RV. Now, you can trigger renders from RV directly: right click and pick Maya Render -> Render. Hit x, while in RV to see the Folder/Sources/Stacks structure
+Set as Maya Port the one you picked earlier with the python script, say 4700. So set Port to 4700​
+under Maya Render Menu -> Configure in RV. Now, you can trigger renders from RV directly: right 
+click and pick Maya Render -> Render. Hit x, while in RV to see the Folder/Sources/Stacks structure
 
-When executing the python script with a different port number, a new RVlive button will be generated.
+When executing the python script with a different port number, a new RVlive button will be 
+generated.
 
-Draw a region of interest (ROI) by dragging the middle mouse button in RV, while simultaneously hold the Shift button. A red rectangular region should appear, right-click and pick 
+Draw a region of interest (ROI) by dragging the middle mouse button in RV, while simultaneously 
+hold the Shift button. A red rectangular region should appear, right-click and pick 
 Maya Render -> Render Region.
 
 Feel free to iterate with different scenes, image sizes. 
 Any trouble/failure/success, do let me know.
+
+NY
 
 
 [1] Gaetan Guidet https://github.com/gatgui/arnold-rv
