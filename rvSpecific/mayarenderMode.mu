@@ -45,7 +45,8 @@ class: MayaRenderMode : rvtypes.MinorMode {
       _endx   = -1.0;
       _endy   = -1.0;
 
-      commands.redraw(); // redraw only schedules an update to happen. It does not actually force one
+      commands.redraw(); 
+        // redraw only schedules an update to happen. It does not actually force one
    }
 
      // sends string-format command to Maya

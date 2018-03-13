@@ -410,9 +410,10 @@ driver_open {
 
    if ( data->media_name == NULL ) {
 
-         // Generate a unique media name, which cannot contain spaces. Everything following the last 
-         // slash is stripped from the name displayed in RV, so we put the timestamp in front 
-         // followed by a slash so that it won't clutter the catalogue.
+         // Generate a unique media name, which cannot contain spaces. 
+         // Everything following the last slash is stripped from the name 
+         // displayed in RV, so we put the timestamp in front followed by a 
+         // slash so that it won't clutter the catalogue.
       std::string mn = AiNodeGetStr(node, "media_name");
          // add time stamp
       
