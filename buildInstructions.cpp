@@ -24,7 +24,7 @@
    cd ../
    rvpkg -install ./Packages/mayarender-1.0.rvpkg
 
-Fire-up RV and make sure you get a "Load Maya Render Mode loaded" in RVs console without any errors
+Open RV and make sure you get a "Load Maya Render Mode loaded" in RVs console without any errors
 If Maya Render Mode Menu does not show up in RV, go to Packages Tab under RV Preferences Window and
 make sure Maya Render Support is Installed and Loaded. 
 

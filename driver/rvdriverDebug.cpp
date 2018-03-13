@@ -60,9 +60,9 @@ public:
    }
    
 private:
-   void* mData;
-   size_t mLength;
-   mutable FreeFunc mFree;
+   void*    mData;
+   size_t   mLength;
+   mutable  FreeFunc mFree;
 };
 
 class Client {
@@ -293,7 +293,7 @@ private:
    gnet::TCPSocket *mSocket;
    gnet::TCPConnection *mConn;
 
-   bool mRVStarted;
+   bool        mRVStarted;
    std::string mExtraArgs;
 }; // class Client
 
